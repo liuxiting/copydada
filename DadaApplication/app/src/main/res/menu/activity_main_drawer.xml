@@ -4,22 +4,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:icon="@mipmap/menu_activity"
+            android:title="奖励活动" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:icon="@mipmap/menu_wallet"
+            android:title="我的钱包" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:icon="@mipmap/make_money_map"
+            android:title="赚钱地图" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@mipmap/qishixueyuan"
+            android:title="骑士学院" />
+        <item
+            android:id="@+id/nav_bangzhu"
+            android:icon="@mipmap/menu_more"
+            android:title="帮助中心" />
     </group>
-
+    <group>
     <item android:title="Communicate">
         <menu>
             <item
@@ -32,5 +36,5 @@
                 android:title="Send" />
         </menu>
     </item>
-
+    </group>
 </menu>
