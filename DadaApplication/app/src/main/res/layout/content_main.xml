@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/layout_titlebar"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            >
+            android:layout_alignParentBottom="true">
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -25,6 +33,7 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="20dp"
+                android:textSize="14sp"
                 android:drawableTop="@mipmap/order_setting_gray"
 
                 />
@@ -38,7 +47,7 @@
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:layout_marginTop="3dp"
-                android:drawablePadding="30dp"
+                android:drawablePadding="10dp"
                 android:textColor="#1C89EA"
 
                 android:drawableLeft="@mipmap/main_refresh"
@@ -54,10 +63,12 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="20dp"
+                android:textSize="14sp"
                 android:drawableTop="@mipmap/my_task_gray"
                 />
         </RelativeLayout>
     </RelativeLayout>
+    </LinearLayout>
 
 
 
