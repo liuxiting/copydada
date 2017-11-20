@@ -1,5 +1,6 @@
 package com.sdk.lxting.dadaapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sdk.lxting.dadaapplication.Base.BaseActivity;
+import com.sdk.lxting.dadaapplication.activity.MytaskActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -62,9 +64,13 @@ public class MainActivity extends BaseActivity
     protected void initdata() {
 
     }
-    @OnClick({R.id.btnrefresh,R.id.layout_back})
+    @OnClick({R.id.btnrefresh,R.id.layout_back,R.id.renwu})
     public   void  onclick(View view){
         switch (view.getId()){
+            case R.id.renwu:
+                startActivity(new Intent(MainActivity.this, MytaskActivity.class));
+                overridePendingTransition(0,R.anim.inx);
+                break;
             case R.id.btnrefresh://点击刷新列表
                 Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
                 if (rotate != null) {
@@ -124,7 +130,7 @@ public class MainActivity extends BaseActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-            overridePendingTransition(0,R.anim.out);
+
 
         }
 
