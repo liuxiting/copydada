@@ -8,13 +8,19 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sdk.lxting.dadaapplication.Base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,32 +35,22 @@ public class MainActivity extends BaseActivity
     NavigationView navView;
     @BindView(R.id.drawer_layout)
     DrawerLayout drawerLayout;
+    @BindView(R.id.btnrefresh)
+    LinearLayout btnrefresh;//刷新按钮
+    @BindView(R.id.img)
+    ImageView imgrefresh;//刷新图片
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-
-
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        layoutBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-                if (drawer.isDrawerOpen(GravityCompat.START)) {
-                    drawer.closeDrawer(GravityCompat.START);
-                }else {
-                    drawer.openDrawer(GravityCompat.START);
-                }
-            }
-        });
     }
 
     @Override
@@ -65,6 +61,30 @@ public class MainActivity extends BaseActivity
     @Override
     protected void initdata() {
 
+    }
+    @OnClick({R.id.btnrefresh,R.id.layout_back})
+    public   void  onclick(View view){
+        switch (view.getId()){
+            case R.id.btnrefresh://点击刷新列表
+                Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
+                if (rotate != null) {
+                    imgrefresh.startAnimation(rotate);
+                }  else {
+                    imgrefresh.setAnimation(rotate);
+                    imgrefresh.startAnimation(rotate);
+                }
+                break;
+            case R.id.layout_back://点击左上方的按钮，划出左侧菜单
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START);
+                }else {
+                    drawer.openDrawer(GravityCompat.START);
+                }
+                break;
+
+
+        }
     }
 
 
@@ -104,6 +124,7 @@ public class MainActivity extends BaseActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+            overridePendingTransition(0,R.anim.out);
 
         }
 

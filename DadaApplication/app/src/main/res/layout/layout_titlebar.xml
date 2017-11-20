@@ -28,8 +28,6 @@
             android:layout_marginLeft="20dp"/>
         </RelativeLayout>
 
-
-
         <TextView
             android:id="@+id/txt_title"
             android:layout_width="wrap_content"
