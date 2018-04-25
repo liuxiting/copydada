@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\icon_notice_gray.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\icon_notice_gray.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\menu_wallet.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\menu_wallet.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\order_setting_gray.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\order_setting_gray.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\icon_open_drawer_gray.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\icon_open_drawer_gray.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\menu_more.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\menu_more.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\main_refresh.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\main_refresh.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\make_money_map.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\make_money_map.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\qishixueyuan.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\qishixueyuan.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\menu_activity.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\menu_activity.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\my_task_gray.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\my_task_gray.png"
+    },
+    {
+        "merged": "H:\\copydata\\DadaApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\dada_icon.png",
+        "source": "H:\\copydata\\DadaApplication\\app\\src\\main\\res\\mipmap-xhdpi\\dada_icon.png"
+    }
+]
