@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.sdk.lxting.dadaapplication.Base.BaseActivity;
 import com.sdk.lxting.dadaapplication.activity.MytaskActivity;
+import com.sdk.lxting.dadaapplication.activity.TubiaoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -88,8 +89,6 @@ public class MainActivity extends BaseActivity
                     drawer.openDrawer(GravityCompat.START);
                 }
                 break;
-
-
         }
     }
 
@@ -132,6 +131,9 @@ public class MainActivity extends BaseActivity
         } else if (id == R.id.nav_manage) {
 
 
+        }else if(id==R.id.nav_tubiao){
+            startActivity(new Intent(MainActivity.this, TubiaoActivity.class));
+            
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
